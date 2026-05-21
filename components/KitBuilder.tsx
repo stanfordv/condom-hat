@@ -81,7 +81,7 @@ export default function KitBuilder({ initialScenario }: { initialScenario?: Scen
             className="rounded-xl border-2 border-gray-200 p-4 text-left transition hover:border-gray-900"
           >
             <p className="font-semibold text-gray-900">{s.label}</p>
-            <p className="mt-0.5 text-sm text-gray-500">{s.description}</p>
+            <p className="mt-0.5 text-sm text-gray-600">{s.description}</p>
           </button>
         ))}
       </div>
@@ -112,7 +112,7 @@ export default function KitBuilder({ initialScenario }: { initialScenario?: Scen
             className="w-full rounded-xl border-2 border-gray-200 p-4 text-left transition hover:border-gray-900"
           >
             <p className="font-semibold text-gray-900">{e.label}</p>
-            <p className="mt-0.5 text-sm text-gray-500">{e.description}</p>
+            <p className="mt-0.5 text-sm text-gray-600">{e.description}</p>
           </button>
         ))}
       </div>
@@ -128,7 +128,7 @@ export default function KitBuilder({ initialScenario }: { initialScenario?: Scen
             className="w-full rounded-xl border-2 border-gray-200 p-4 text-left transition hover:border-gray-900"
           >
             <p className="font-semibold text-gray-900">{b.label}</p>
-            <p className="mt-0.5 text-sm text-gray-500">{b.range}</p>
+            <p className="mt-0.5 text-sm text-gray-600">{b.range}</p>
           </button>
         ))}
       </div>
@@ -147,7 +147,7 @@ export default function KitBuilder({ initialScenario }: { initialScenario?: Scen
       </div>
 
       {loading ? (
-        <div className="py-10 text-center text-gray-500">Building your kit…</div>
+        <div className="py-10 text-center text-gray-600">Building your kit…</div>
       ) : (
         <>
           {steps[step]}
@@ -155,7 +155,7 @@ export default function KitBuilder({ initialScenario }: { initialScenario?: Scen
           {step > 0 && (
             <button
               onClick={() => setStep((s) => s - 1)}
-              className="mt-5 text-sm text-gray-400 hover:text-gray-700"
+              className="mt-5 text-sm text-gray-600 hover:text-gray-900"
             >
               ← Back
             </button>

@@ -18,13 +18,13 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="px-6 py-24 text-center">
+      <section className="bg-white px-6 py-24 text-center">
         <div className="mx-auto max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-widest text-gray-400">Premium preparedness</p>
+          <p className="text-sm font-semibold uppercase tracking-widest text-gray-600">Premium preparedness</p>
           <h1 className="mt-4 text-5xl font-bold leading-tight tracking-tight text-gray-900">
             Understand the threat.<br />Buy what makes sense.
           </h1>
-          <p className="mt-6 text-lg leading-relaxed text-gray-500">
+          <p className="mt-6 text-lg leading-relaxed text-gray-600">
             Every product we carry is the single best option in its category.
             No filler. No fear-mongering. Just calm, expert knowledge.
           </p>
@@ -61,7 +61,7 @@ export default async function HomePage() {
       ) : null}
 
       {/* Scenario cards */}
-      <section className="px-6 py-12">
+      <section className="bg-white px-6 py-12">
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-8 text-2xl font-bold text-gray-900">Choose your scenario</h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -74,9 +74,9 @@ export default async function HomePage() {
                   className="group rounded-2xl border border-gray-200 bg-white p-6 transition hover:border-gray-900 hover:shadow-md"
                 >
                   <span className="text-3xl">{emoji}</span>
-                  <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-gray-400">{s.eyebrow}</p>
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-gray-600">{s.eyebrow}</p>
                   <h3 className="mt-2 font-semibold text-gray-900 leading-snug">{s.title}</h3>
-                  <p className="mt-1 text-sm text-gray-500 line-clamp-2">{s.primaryThreat}</p>
+                  <p className="mt-1 text-sm text-gray-600 line-clamp-2">{s.primaryThreat}</p>
                 </Link>
               )
             })}
@@ -90,7 +90,7 @@ export default async function HomePage() {
           <div className="mx-auto max-w-6xl">
             <div className="mb-10 text-center">
               <h2 className="text-3xl font-bold text-gray-900">Build your kit</h2>
-              <p className="mt-3 text-gray-500">Four questions. A personalised kit. Straight to checkout.</p>
+              <p className="mt-3 text-gray-600">Four questions. A personalised kit. Straight to checkout.</p>
             </div>
             <KitBuilder />
           </div>
@@ -98,7 +98,7 @@ export default async function HomePage() {
       )}
 
       {/* How it works */}
-      <section className="px-6 py-20">
+      <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-12 text-center text-2xl font-bold text-gray-900">How it works</h2>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
@@ -108,9 +108,9 @@ export default async function HomePage() {
               { step: '03', title: 'Buy what you need', body: 'One best-in-class product per category. Organised by scenario. Delivered fast.' },
             ].map(({ step, title, body }) => (
               <div key={step}>
-                <p className="text-xs font-bold uppercase tracking-widest text-gray-300">{step}</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-gray-500" aria-hidden="true">{step}</p>
                 <h3 className="mt-2 font-semibold text-gray-900">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-500">{body}</p>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">{body}</p>
               </div>
             ))}
           </div>

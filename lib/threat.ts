@@ -6,6 +6,9 @@ const DEFAULT_THREAT = { level: 1 as const, message: null, scenario: null }
 //   import { get } from '@vercel/edge-config'
 //   const level = await get<number>('threat_level')
 export async function getActiveThreatLevel() {
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL?.startsWith('http')) {
+    return DEFAULT_THREAT
+  }
   const supabase = await createClient()
   const { data } = await supabase
     .from('threat_levels')

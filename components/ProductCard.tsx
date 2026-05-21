@@ -16,14 +16,14 @@ export default function ProductCard({ product }: { product: Product }) {
         </span>
       </div>
       {product.why && (
-        <p className="mt-2 text-sm leading-relaxed text-gray-500">{product.why}</p>
+        <p className="mt-2 text-sm leading-relaxed text-gray-600">{product.why}</p>
       )}
       <div className="mt-auto flex items-center justify-between pt-4">
         <span className="text-base font-semibold text-gray-900">
           ${(product.price_cents / 100).toFixed(2)}
         </span>
         {!product.in_stock && (
-          <span className="text-xs font-medium text-red-500">Out of stock</span>
+          <span className="text-xs font-medium text-red-600">Out of stock</span>
         )}
       </div>
     </div>

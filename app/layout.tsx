@@ -8,6 +8,7 @@ const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin']
 export const metadata: Metadata = {
   title: 'CondomHat — Premium Preparedness',
   description: 'Understand the threat. Buy the gear that makes sense.',
+  other: { 'color-scheme': 'light' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

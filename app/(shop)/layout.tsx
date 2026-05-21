@@ -16,7 +16,7 @@ export default async function ShopLayout({ children }: { children: React.ReactNo
   return (
     <div className="flex min-h-full flex-col">
       <ThreatBanner />
-      <header className="border-b border-gray-100 px-6 py-4">
+      <header className="bg-white border-b border-gray-100 px-6 py-4">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
           <Link href="/" className="text-lg font-bold tracking-tight text-gray-900">
             CondomHat
@@ -26,7 +26,7 @@ export default async function ShopLayout({ children }: { children: React.ReactNo
               <Link
                 key={s.slug}
                 href={`/scenario/${s.slug}`}
-                className="text-sm text-gray-500 hover:text-gray-900 transition-colors"
+                className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
               >
                 {s.label}
               </Link>
@@ -43,7 +43,7 @@ export default async function ShopLayout({ children }: { children: React.ReactNo
         </div>
       </header>
       <main className="flex-1">{children}</main>
-      <footer className="border-t border-gray-100 px-6 py-8 text-center text-xs text-gray-400">
+      <footer className="border-t border-gray-100 px-6 py-8 text-center text-xs text-gray-600">
         <p>CondomHat — Anti-fear. Pro-knowledge.</p>
       </footer>
     </div>
