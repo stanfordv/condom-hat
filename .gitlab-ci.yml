@@ -1,0 +1,35 @@
+stages:
+  - validate
+
+default:
+  image: node:20-alpine
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - node_modules/
+
+variables:
+  CI: "true"
+
+install:
+  stage: validate
+  script:
+    - npm ci
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 hour
+
+lint:
+  stage: validate
+  needs: [install]
+  script:
+    - npm run lint
+
+typecheck:
+  stage: validate
+  needs: [install]
+  script:
+    - npm run typecheck
