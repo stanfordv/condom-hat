@@ -53,7 +53,7 @@ export default async function ShopLayout({ children }: { children: React.ReactNo
       <main className="flex-1">{children}</main>
       <footer className="px-6 py-8 text-center" style={{ backgroundColor: '#13100A' }}>
         <p className="text-xs uppercase tracking-widest" style={{ color: 'rgba(245,240,232,0.4)' }}>CondomHat — Anti-fear. Pro-knowledge.</p>
-        <p className="mt-2 text-xs italic tracking-wide" style={{ color: 'rgba(245,240,232,0.18)' }}>New Zealand · Hawaii · World Wide</p>
+        <p className="mt-2 text-xs italic tracking-wider" style={{ color: 'rgba(245,240,232,0.4)' }}>New Zealand · Hawaii · World Wide</p>
       </footer>
     </div>
   )
