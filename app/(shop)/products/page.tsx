@@ -31,7 +31,7 @@ export default function ProductsPage() {
       </section>
 
       <section className="px-6 py-16">
-        <div className="mx-auto max-w-6xl space-y-16">
+        <div className="mx-auto max-w-7xl space-y-16">
           {CATEGORIES.map((category) => {
             const items = CATALOG.filter((item) => item.category === category)
             return (
@@ -39,7 +39,7 @@ export default function ProductsPage() {
                 <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-gray-500">
                   {category}
                 </h2>
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                   {items.map((item) => (
                     <Link
                       key={item.slug}
