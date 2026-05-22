@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import ThreatBanner from '@/components/ThreatBanner'
 import { getActiveThreatLevel } from '@/lib/threat'
 import type { Scenario } from '@/lib/types'
@@ -19,8 +20,9 @@ export default async function ShopLayout({ children }: { children: React.ReactNo
       <ThreatBanner />
       <header className="px-6 py-4" style={{ backgroundColor: '#13100A' }}>
         <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <Link href="/" className="text-lg font-bold tracking-widest uppercase" style={{ color: '#F0C400' }}>
-            CondomHat
+          <Link href="/" className="flex items-center gap-2">
+            <Image src="/condomhatdude.png" alt="CondomHat" width={36} height={36} className="rounded" />
+            <span className="text-lg font-bold tracking-widest uppercase" style={{ color: '#F0C400' }}>CondomHat</span>
           </Link>
           <nav className="hidden gap-6 sm:flex">
             {SCENARIO_NAV.map((s) => (
