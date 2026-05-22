@@ -49,7 +49,7 @@ export default async function HomePage() {
               </Link>
             </div>
           )}
-          <p className="mt-10 text-xs italic tracking-wide" style={{ color: 'rgba(245,240,232,0.2)' }}>
+          <p className="mt-10 text-sm italic tracking-wider" style={{ color: 'rgba(245,240,232,0.4)' }}>
             Envy of the Apocalypse.
           </p>
         </div>

@@ -88,7 +88,7 @@ export default function AboutPage() {
           <p className="text-lg font-bold leading-tight" style={{ color: '#F0C400' }}>
             "Anti-fear. Pro-knowledge."
           </p>
-          <p className="mt-2 text-xs italic tracking-wide" style={{ color: 'rgba(245,240,232,0.25)' }}>
+          <p className="mt-2 text-sm italic tracking-wider" style={{ color: 'rgba(245,240,232,0.4)' }}>
             Envy of the Apocalypse.
           </p>
           <p className="mt-4 leading-relaxed" style={{ color: 'rgba(245,240,232,0.6)' }}>
