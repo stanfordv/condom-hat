@@ -43,6 +43,20 @@ export default async function ScenarioPage({ params }: { params: Promise<{ slug:
           <Link href="/" className="text-lg font-bold tracking-tight text-gray-900">
             CondomHat
           </Link>
+
+          {/* Intel / Story toggle */}
+          <div className="flex items-center rounded-lg border border-gray-200 p-1 text-sm font-medium">
+            <span className="rounded-md bg-gray-900 px-4 py-1.5 text-white">
+              Intel
+            </span>
+            <Link
+              href={`/scenario/${slug}/story`}
+              className="rounded-md px-4 py-1.5 text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              Story
+            </Link>
+          </div>
+
           <Link
             href="#kit-builder"
             className="rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700 transition-colors"
