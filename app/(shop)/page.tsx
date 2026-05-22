@@ -8,6 +8,7 @@ const SCENARIO_CARDS: { slug: Scenario; emoji: string }[] = [
   { slug: 'virus', emoji: '🦠' },
   { slug: 'nuclear', emoji: '☢️' },
   { slug: 'drone', emoji: '⚡' },
+  { slug: 'flooding', emoji: '🌊' },
   { slug: 'general', emoji: '🎒' },
 ]
 
@@ -64,7 +65,7 @@ export default async function HomePage() {
       <section className="bg-white px-6 py-12">
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-8 text-2xl font-bold text-gray-900">Choose your scenario</h2>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {SCENARIO_CARDS.map(({ slug, emoji }) => {
               const s = scenarios[slug]
               return (
