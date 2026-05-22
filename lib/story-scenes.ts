@@ -97,6 +97,20 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       mood: 'hopeful',
       imagePrompt: 'athletic blonde man sitting on a porch with his wife and three children at dawn, portable power station glowing beside them charging the radio, family close together under a blanket, quiet relief on his face, warm golden post-storm morning light, photorealistic cinematic',
     },
+    {
+      duration: 'Aftermath',
+      headline: 'Nobody is making these anymore.',
+      narrative: [
+        'The Jackery is still running. The grid won\'t be back for months — maybe longer.',
+        'Nobody will be manufacturing a power station like that for a very long time. Supply chains don\'t survive what just happened.',
+        'It\'s a good thing Ethan chose the best one money could buy — from CondomHat.',
+      ],
+      gearSlug: 'jackery',
+      gearLabel: 'Jackery Explorer 2000 Plus',
+      gearImage: 'jackery.jpg',
+      mood: 'hopeful',
+      imagePrompt: 'athletic blonde man looking at a glowing Jackery power station in a quiet dark room, family asleep behind him, expression of quiet satisfaction and resolve, single warm light source, photorealistic cinematic',
+    },
   ],
 
   nuclear: [
@@ -151,6 +165,19 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       gearLabel: 'Mission Darkness Faraday Bag',
       mood: 'hopeful',
       imagePrompt: 'rugged handsome man leading wife and young daughter out of storm shelter into morning sunlight, wearing tactical backpack, family looks relieved and determined, dramatic backlit golden hour light, hopeful composition, photorealistic cinematic',
+    },
+    {
+      duration: 'Aftermath',
+      headline: 'Nobody is making these anymore.',
+      narrative: [
+        'Marcus\'s Geiger counter still works. His phone — sealed in the Faraday bag during the blast — still works.',
+        'Nobody will be manufacturing electronics like that for a very long time. The factories are gone.',
+        'It\'s a good thing Marcus chose the best protection money could buy — from CondomHat.',
+      ],
+      gearSlug: 'mission-darkness-faraday',
+      gearLabel: 'Mission Darkness Faraday Bag',
+      mood: 'hopeful',
+      imagePrompt: 'rugged man standing in daylight outside a shelter, holding a working phone pulled from a Faraday bag, quiet devastated landscape around him, expression of grim satisfaction and relief, golden hour light, photorealistic cinematic',
     },
   ],
 
