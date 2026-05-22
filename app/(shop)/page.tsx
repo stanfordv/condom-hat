@@ -22,7 +22,7 @@ export default async function HomePage() {
       <section className="px-6 py-28 text-center" style={{ backgroundColor: '#13100A' }}>
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-bold uppercase tracking-[0.35em]" style={{ color: 'rgba(245,240,232,0.35)' }}>
-            ★ Premium Preparedness ★
+            ★ Emergency Provisions ★
           </p>
           <h1 className="mt-5 text-5xl font-bold leading-tight tracking-tight" style={{ color: '#F0C400' }}>
             Understand the threat.<br />Buy what makes sense.
@@ -41,7 +41,7 @@ export default async function HomePage() {
                 Build your kit
               </Link>
               <Link
-                href="/scenario/general"
+                href="/scenario/virus"
                 className="rounded-xl px-6 py-3 font-medium uppercase tracking-wider transition-colors"
                 style={{ border: '1px solid rgba(240,196,0,0.35)', color: '#F0C400' }}
               >
