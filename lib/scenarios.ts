@@ -68,6 +68,19 @@ export const scenarios: Record<Scenario, ScenarioConfig> = {
       { label: 'Recovery', duration: 'Week 2+', description: 'Services restore. Community rebuilds. Your kit helped you weather the gap.' },
     ],
   },
+  flooding: {
+    slug: 'flooding',
+    title: 'Massive Flooding',
+    eyebrow: 'Scenario 05',
+    intro: 'Floodwaters don\'t just damage property — they isolate communities within hours. The people who survive well are the ones who prepared to help, not just themselves.',
+    primaryThreat: 'Water isolation, contamination, communication loss, supply cut-off',
+    timeline: [
+      { label: 'Early warning', duration: 'Hours 0–12', description: 'Flood watches escalate to warnings. Rivers breach banks faster than forecast. Evacuation routes start flooding.' },
+      { label: 'Rising water', duration: 'Hours 12–48', description: 'Ground floors inaccessible. Power and road access cut. Those without supplies face immediate crisis.' },
+      { label: 'Isolation', duration: 'Days 2–7', description: 'No supply lines. Water contaminated. Communities cut off from emergency services. Self-reliance and mutual aid become survival.' },
+      { label: 'Recovery', duration: 'Weeks 2–8', description: 'Water recedes. Infrastructure damage assessed. Rebuilding begins — but the community that helped each other recovers fastest.' },
+    ],
+  },
 }
 
 export const scenarioSlugs = Object.keys(scenarios) as Scenario[]

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import type { StoryScene } from '@/lib/story-scenes'
 
@@ -110,10 +111,23 @@ export default function StoryMode({ scenes, scenarioSlug, scenarioTitle }: Props
             <p className="text-xs font-semibold uppercase tracking-widest text-white/30 mb-3">
               Gear collected
             </p>
-            <div className="inline-flex items-center gap-3 rounded-xl border border-white/15 bg-white/5 px-5 py-3">
-              <span className={`h-2 w-2 rounded-full flex-shrink-0 ${colors.dot}`} />
-              <span className="text-sm font-semibold text-white">{scene.gearLabel}</span>
-              <span className={`text-xs font-medium ${colors.accent}`}>added to kit</span>
+            <div className="inline-flex items-center gap-4 rounded-xl border border-white/15 bg-white/5 px-4 py-3">
+              {scene.gearImage && (
+                <div className="relative h-14 w-14 flex-shrink-0 rounded-lg overflow-hidden bg-white/10">
+                  <Image
+                    src={`/products/${scene.gearImage}`}
+                    alt={scene.gearLabel ?? ''}
+                    fill
+                    className="object-cover"
+                    sizes="56px"
+                  />
+                </div>
+              )}
+              {!scene.gearImage && <span className={`h-2 w-2 rounded-full flex-shrink-0 ${colors.dot}`} />}
+              <div>
+                <span className="block text-sm font-semibold text-white">{scene.gearLabel}</span>
+                <span className={`text-xs font-medium ${colors.accent}`}>added to kit</span>
+              </div>
             </div>
           </div>
         )}

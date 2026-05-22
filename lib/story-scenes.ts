@@ -6,6 +6,7 @@ export interface StoryScene {
   narrative: string[]
   gearSlug: string | null
   gearLabel: string | null
+  gearImage?: string  // filename in /public/products/
   mood: 'normal' | 'tense' | 'critical' | 'hopeful'
   imagePrompt?: string
 }
@@ -22,6 +23,7 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       ],
       gearSlug: 'midland-er310',
       gearLabel: 'Midland ER310 Emergency Radio',
+      gearImage: 'midland-radio.jpg',
       mood: 'tense',
     },
     {
@@ -34,6 +36,7 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       ],
       gearSlug: 'fenix-hm55r',
       gearLabel: 'Fenix HM55R Headlamp',
+      gearImage: 'fenix-headlamp.png',
       mood: 'critical',
     },
     {
@@ -46,6 +49,7 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       ],
       gearSlug: 'mystery-ranch-3day',
       gearLabel: 'Mystery Ranch 3-Day Assault Pack',
+      gearImage: 'daypack.jpg',
       mood: 'critical',
     },
     {
@@ -58,6 +62,7 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       ],
       gearSlug: 'jackery-300-plus',
       gearLabel: 'Jackery Explorer 300 Plus Solar',
+      gearImage: 'jackery.jpg',
       mood: 'hopeful',
     },
   ],
@@ -117,6 +122,93 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
     },
   ],
 
+  flooding: [
+    {
+      duration: 'Hour 0',
+      headline: 'The river is rising.',
+      narrative: [
+        'David has been watching the forecast for three days. When the weather radio cracks to life at 2am, he is already awake.',
+        'The river is at flood stage and climbing. His basement holds six weeks of supplies.',
+        'He knows something his neighbours don\'t yet: this is going to be bad, and the time to act is right now.',
+      ],
+      gearSlug: 'midland-radio',
+      gearLabel: 'Midland ER310 Weather Alert Radio',
+      gearImage: 'midland-radio.jpg',
+      mood: 'tense',
+      imagePrompt: 'calm weathered man in his 50s, salt-and-pepper hair, sitting at kitchen table at 2am listening to a weather alert radio, rain hammering the window behind him, single lamp light, focused composed expression, photorealistic cinematic',
+    },
+    {
+      duration: 'Hours 12–24',
+      headline: 'His neighbours weren\'t ready.',
+      narrative: [
+        'By morning the street is ankle-deep. He goes door to door with his headlamp, knocking, checking who is still there.',
+        'The elderly couple at number twelve have nothing — no food, no plan, no way out.',
+        'He tells them to pack one bag each. He will carry the rest.',
+      ],
+      gearSlug: 'fenix-headlamp',
+      gearLabel: 'Fenix HM55R Headlamp',
+      gearImage: 'fenix-headlamp.png',
+      mood: 'tense',
+      imagePrompt: 'weathered man in his 50s wearing a headlamp in rain gear, standing at a neighbours flooded doorstep in predawn darkness, rain-soaked street behind him, concerned but determined expression, dramatic wet street lighting, photorealistic cinematic',
+    },
+    {
+      duration: 'Day 2',
+      headline: 'The rope holds.',
+      narrative: [
+        'The water is waist-deep by midday. The Survivor Cord is tied to a lamp post at one end and his belt at the other.',
+        'He guides the couple from their porch to higher ground, one careful step at a time.',
+        'Nobody panics. That is his job — to make sure nobody panics.',
+      ],
+      gearSlug: 'rope',
+      gearLabel: 'Titan Survivor Cord',
+      gearImage: 'rope.jpg',
+      mood: 'critical',
+      imagePrompt: 'stocky weathered man in his 50s waist-deep in brown floodwater, one hand gripping a safety rope tied to a lamp post, guiding an elderly woman across, overcast dramatic daylight, determined heroic expression, photorealistic cinematic',
+    },
+    {
+      duration: 'Day 3',
+      headline: 'Water for everyone.',
+      narrative: [
+        'The community has gathered at the old community hall on the hill. Twelve people, three dogs, one generator.',
+        'The tap water has been contaminated since yesterday. He passes the LifeStraw along the table.',
+        'Nobody goes thirsty. That is also his job.',
+      ],
+      gearSlug: 'lifestraw',
+      gearLabel: 'LifeStraw Personal Water Filter',
+      gearImage: 'lifestraw.jpg',
+      mood: 'critical',
+      imagePrompt: 'weathered man in his 50s at a community hall table, handing a LifeStraw water filter to a young mother, group of neighbours seated around him, overcast light through high windows, calm capable expression, photorealistic cinematic',
+    },
+    {
+      duration: 'Day 4',
+      headline: 'Getting word out.',
+      narrative: [
+        'The EcoFlow powers the weather radio, three phone charges, and a lamp. All at once.',
+        'He gets through to emergency services. They know where they are now. Help is coming.',
+        'He doesn\'t say "I told you so." He just makes coffee and hands it around.',
+      ],
+      gearSlug: 'ecoflow',
+      gearLabel: 'EcoFlow Delta 3 Max Power Station',
+      gearImage: 'ecoflow.jpg',
+      mood: 'hopeful',
+      imagePrompt: 'weathered man in his 50s at a makeshift command station, EcoFlow power station charging multiple phones, neighbours clustered around, one talking on a phone with relief on her face, dramatic window light, photorealistic cinematic',
+    },
+    {
+      duration: 'Week 2',
+      headline: 'He didn\'t wait for help.',
+      narrative: [
+        'The water has receded. The street looks like a different world — mud, debris, silence.',
+        'His neighbours are all accounted for. Twelve people who would have been stranded alone made it through together.',
+        'He clips the Leatherman to his belt and gets to work.',
+      ],
+      gearSlug: 'leatherman',
+      gearLabel: 'Leatherman Multi-tool',
+      gearImage: 'leatherman.jpg',
+      mood: 'hopeful',
+      imagePrompt: 'weathered man in his 50s standing on a flood-damaged street in morning sun, neighbours working together clearing debris behind him, small satisfied smile, golden post-storm light, photorealistic cinematic',
+    },
+  ],
+
   virus: [
     {
       duration: 'Week 1',
@@ -127,7 +219,8 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
         'You start counting what you have at home. It isn\'t enough.',
       ],
       gearSlug: 'lifestraw-peak-squeeze',
-      gearLabel: 'LifeStraw Peak Squeeze',
+      gearLabel: 'LifeStraw Personal Water Filter',
+      gearImage: 'lifestraw.jpg',
       mood: 'tense',
     },
     {
@@ -151,7 +244,8 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
         'Outside, the neighbourhood has learned what you already knew.',
       ],
       gearSlug: 'scherber-ifak',
-      gearLabel: 'Scherber Premium IFAK',
+      gearLabel: 'First Aid Kit',
+      gearImage: 'first-aid-kit.jpg',
       mood: 'critical',
     },
     {
@@ -163,7 +257,8 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
         'That\'s not pessimism. That\'s pattern recognition.',
       ],
       gearSlug: 'leatherman-wave-plus',
-      gearLabel: 'Leatherman Wave+',
+      gearLabel: 'Leatherman Multi-tool',
+      gearImage: 'leatherman.jpg',
       mood: 'hopeful',
     },
   ],
@@ -179,6 +274,7 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       ],
       gearSlug: 'fenix-hm55r',
       gearLabel: 'Fenix HM55R Headlamp',
+      gearImage: 'fenix-headlamp.png',
       mood: 'normal',
     },
     {
@@ -191,6 +287,7 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       ],
       gearSlug: 'jackery-300-plus',
       gearLabel: 'Jackery Explorer 300 Plus Solar',
+      gearImage: 'jackery.jpg',
       mood: 'tense',
     },
     {
@@ -203,6 +300,7 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       ],
       gearSlug: 'midland-er310',
       gearLabel: 'Midland ER310 Emergency Radio',
+      gearImage: 'midland-radio.jpg',
       mood: 'tense',
     },
     {
@@ -215,6 +313,7 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       ],
       gearSlug: 'mystery-ranch-3day',
       gearLabel: 'Mystery Ranch 3-Day Assault Pack',
+      gearImage: 'daypack.jpg',
       mood: 'hopeful',
     },
   ],

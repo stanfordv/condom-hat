@@ -1,4 +1,4 @@
-export type Scenario = 'virus' | 'nuclear' | 'drone' | 'general'
+export type Scenario = 'virus' | 'nuclear' | 'drone' | 'general' | 'flooding'
 export type Tier = 'essential' | 'recommended' | 'premium'
 export type BudgetTier = 'starter' | 'mid' | 'full'
 export type ExistingLevel = 'none' | 'some' | 'good'
