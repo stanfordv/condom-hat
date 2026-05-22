@@ -47,10 +47,8 @@ export default function StoryMode({ scenes, scenarioSlug, scenarioTitle }: Props
   function advance() {
     if (!canContinue || isLast) return
     setFading(true)
-    setTimeout(() => {
-      setIndex(i => i + 1)
-      setFading(false)
-    }, 350)
+    setTimeout(() => setIndex(i => i + 1), 300)
+    setTimeout(() => setFading(false), 360)
   }
 
   return (

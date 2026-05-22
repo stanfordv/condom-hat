@@ -62,10 +62,8 @@ export default function AIStoryMode({ scenes, scenario }: Props) {
   function advance() {
     if (isLast) return
     setFading(true)
-    setTimeout(() => {
-      setIndex(i => i + 1)
-      setFading(false)
-    }, 600)
+    setTimeout(() => setIndex(i => i + 1), 550)
+    setTimeout(() => setFading(false), 620)
   }
 
   return (
@@ -117,7 +115,7 @@ export default function AIStoryMode({ scenes, scenario }: Props) {
       </div>
 
       {/* Content — pinned to bottom */}
-      <div className="relative z-10 flex-1 flex flex-col justify-end px-6 pb-8 max-w-2xl">
+      <div className={`relative z-10 flex-1 flex flex-col justify-end px-6 pb-8 max-w-2xl transition-opacity duration-500 ${fading ? 'opacity-0' : 'opacity-100'}`}>
         <p className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-3">
           {scene.duration}
         </p>
