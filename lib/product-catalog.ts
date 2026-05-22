@@ -10,7 +10,7 @@ export interface CatalogItem {
 }
 
 export const CATALOG: CatalogItem[] = [
-  // Water
+  // ─── Water ───────────────────────────────────────────────────────────────
   {
     slug: 'lifestraw',
     name: 'LifeStraw Personal Filter',
@@ -21,18 +21,60 @@ export const CATALOG: CatalogItem[] = [
     description: 'Filters up to 1,000 litres of contaminated water without chemicals, batteries, or moving parts. Removes 99.999% of bacteria and parasites down to 0.2 microns.',
     why: 'When taps stop working or water sources are compromised, this is the difference between staying put and risking a supply run. Weighs 45g. No expiry date.',
   },
-  // Medical
+  {
+    slug: 'sawyer-squeeze',
+    name: 'Sawyer Squeeze Water Filter',
+    category: 'Water',
+    image: '/products/sawyer-squeeze.jpg',
+    url: 'https://www.sawyer.com/products/squeeze-water-filter-system',
+    scenarios: ['all'],
+    description: 'Squeeze filter system rated to 100,000 gallons — 100× the capacity of the LifeStraw. Filters to 0.1 microns, backflushes in seconds to restore flow rate. Works with standard bottle threads.',
+    why: 'The best filter for groups or extended use. A single unit can supply a family for years. The backflush syringe means it never clogs permanently.',
+  },
+  {
+    slug: 'msr-guardian',
+    name: 'MSR Guardian Water Purifier',
+    category: 'Water',
+    image: '/products/msr-guardian.jpg',
+    url: 'https://www.msrgear.com/water/water-purifiers/guardian-purifier/06893.html',
+    scenarios: ['virus', 'nuclear', 'flooding'],
+    description: 'Military-grade hollow-fibre purifier that removes bacteria, protozoa, and viruses — including the smallest waterborne threats. Self-cleaning with every pump stroke. NSF P248 military certified.',
+    why: 'The only field purifier that removes viruses without chemicals or UV. After nuclear events or severe contamination, standard filters are not enough. This is the uncompromising option.',
+  },
+
+  // ─── Medical ─────────────────────────────────────────────────────────────
   {
     slug: 'first-aid-kit',
-    name: 'First Aid Kit',
+    name: 'Comprehensive First Aid Kit',
     category: 'Medical',
     image: '/products/first-aid-kit.jpg',
     url: 'https://www.faire.com/product/p_ym29hca3b8',
     scenarios: ['all'],
-    description: 'Comprehensive trauma and first aid kit covering wound care, burns, fractures, and infection control. Organised into labelled sections for fast access under pressure.',
+    description: 'Full trauma and first aid kit covering wound care, burns, fractures, and infection control. Organised into labelled sections for fast access under pressure.',
     why: 'Medical services saturate fast in a crisis. A well-stocked kit means minor injuries stay minor. This is not a plaster-and-paracetamol box — it covers real emergencies.',
   },
-  // Light
+  {
+    slug: 'nar-cat-tourniquet',
+    name: 'NAR Combat Application Tourniquet',
+    category: 'Medical',
+    image: '/products/nar-cat-tourniquet.jpg',
+    url: 'https://www.narescue.com/cat-tourniquet.html',
+    scenarios: ['drone', 'flooding', 'general'],
+    description: 'The tourniquet used by US military and NATO forces. One-handed application, windlass system with locking clip, and a time-of-application writing tab. Proven in combat.',
+    why: 'Uncontrolled limb bleeding kills in 3–5 minutes. This is the only tool that reliably stops it with one hand. Every prepared household should have at least two.',
+  },
+  {
+    slug: 'israeli-bandage',
+    name: 'Israeli Emergency Bandage',
+    category: 'Medical',
+    image: '/products/israeli-bandage.jpg',
+    url: 'https://www.hhandh.com/products/israeli-bandage-6-inch',
+    scenarios: ['all'],
+    description: '6-inch pressure bandage designed by the Israeli Defence Forces for one-handed application. Built-in pressure bar, closure bar, and secondary dressing. Used by military worldwide.',
+    why: 'Closes wounds, applies pressure, and secures itself — all in one motion. Fits in a jacket pocket. Compact enough that there is no excuse not to carry one.',
+  },
+
+  // ─── Light ────────────────────────────────────────────────────────────────
   {
     slug: 'fenix-headlamp',
     name: 'Fenix HM55R Headlamp',
@@ -44,8 +86,28 @@ export const CATALOG: CatalogItem[] = [
     why: 'Hands-free light is non-negotiable at night. The red mode preserves night vision and avoids signalling your position. Rechargeable means no dependency on batteries.',
   },
   {
+    slug: 'nitecore-p20ix',
+    name: 'Nitecore P20iX Tactical Flashlight',
+    category: 'Light',
+    image: '/products/nitecore-p20ix.jpg',
+    url: 'https://www.nitecore.com/product/p20ix',
+    scenarios: ['drone', 'flooding', 'general'],
+    description: '4,000-lumen output in a compact body. Dual-fuel (21700 and CR123A batteries), instant strobe, IP68 waterproof to 2m. Aircraft-grade aluminium body.',
+    why: '4,000 lumens is enough to illuminate a road or signal over distance. The dual-fuel system means you can run it on batteries you find anywhere. Strobe mode is a deterrent.',
+  },
+  {
+    slug: 'goal-zero-crush',
+    name: 'Goal Zero Crush Light',
+    category: 'Light',
+    image: '/products/goal-zero-crush.jpg',
+    url: 'https://www.goalzero.com/products/crush-light',
+    scenarios: ['general', 'flooding', 'drone'],
+    description: 'Collapsible solar lantern that charges in direct sunlight and provides up to 24 hours of light. Crushes flat to 1cm for storage. IPX6 water resistant.',
+    why: 'A lantern lights a room; a headlamp only lights your path. Solar charging means no batteries or cables. At 47g flattened, it takes up no meaningful space in any pack.',
+  },
+  {
     slug: 'oil-lamp',
-    name: 'Feuerhand Oil Lamp',
+    name: 'Feuerhand Hurricane Oil Lamp',
     category: 'Light',
     image: '/products/oil-lamp.jpg',
     url: 'https://www.amazon.com/Feuerhand-PM-276-7016-Galvanized-Lantern/dp/B07GSX8PZJ',
@@ -53,7 +115,8 @@ export const CATALOG: CatalogItem[] = [
     description: 'German-made galvanised steel hurricane lantern. Burns standard lamp oil or paraffin for 20+ hours per fill. Wind-resistant to storm force.',
     why: 'No batteries, no charging, no failure modes. If everything electronic is dead, this still works. Has been made the same way since 1902.',
   },
-  // Communication
+
+  // ─── Communication ────────────────────────────────────────────────────────
   {
     slug: 'midland-radio',
     name: 'Midland ER310 Weather Alert Radio',
@@ -64,7 +127,28 @@ export const CATALOG: CatalogItem[] = [
     description: 'NOAA weather alert radio with hand crank, solar panel, and USB battery bank. Receives AM/FM and all 7 NOAA weather channels. SOS flashlight built in.',
     why: 'When mobile networks go down, this is how you find out what is happening. Hand crank means it works with zero infrastructure. The battery bank can charge your phone.',
   },
-  // Power
+  {
+    slug: 'garmin-inreach-mini',
+    name: 'Garmin inReach Mini 2',
+    category: 'Communication',
+    image: '/products/garmin-inreach-mini.jpg',
+    url: 'https://www.garmin.com/en-US/p/837461',
+    scenarios: ['flooding', 'drone', 'general'],
+    description: 'Satellite messenger with two-way texting, GPS tracking, and SOS button — works anywhere on Earth with no cellular signal. Pairs with your phone for easy messaging.',
+    why: 'The only communication tool that works when every other network is down. SOS connects directly to a 24/7 search and rescue coordination centre. Worth it for any scenario where you might need to call for help from anywhere.',
+  },
+  {
+    slug: 'baofeng-uv5r',
+    name: 'Baofeng UV-5R Ham Radio',
+    category: 'Communication',
+    image: '/products/baofeng-uv5r.jpg',
+    url: 'https://www.baofengradio.com/products/uv-5r',
+    scenarios: ['drone', 'flooding', 'general'],
+    description: 'Dual-band VHF/UHF handheld transceiver. Transmits and receives on GMRS, FRS, NOAA weather, and amateur frequencies. Rechargeable, with a range of several miles.',
+    why: 'At under €30, this is the entry point to radio communication that does not depend on any infrastructure. Requires an amateur radio licence to transmit legally — obtaining one takes one afternoon.',
+  },
+
+  // ─── Power ────────────────────────────────────────────────────────────────
   {
     slug: 'jackery',
     name: 'Jackery Explorer 2000 Plus',
@@ -85,7 +169,28 @@ export const CATALOG: CatalogItem[] = [
     description: '2,048Wh expandable power station with 2,400W AC output and 80% charge in 43 minutes via wall. Expandable to 6,144Wh with add-on batteries. X-Stream fast charging.',
     why: 'The fastest-charging large power station available. If you have a short window of grid access before going dark, 43 minutes gets you to 80%. Expandable capacity future-proofs your setup.',
   },
-  // Packs
+  {
+    slug: 'goal-zero-yeti',
+    name: 'Goal Zero Yeti 1000X',
+    category: 'Power',
+    image: '/products/goal-zero-yeti.jpg',
+    url: 'https://www.goalzero.com/products/yeti-1000x',
+    scenarios: ['general', 'drone', 'flooding'],
+    description: '983Wh lithium power station with pure sine wave AC inverter, USB-C 60W PD, and compatibility with Goal Zero solar panels. Quiet, clean power for sensitive electronics.',
+    why: 'Pure sine wave output means safe use with CPAP machines, medical equipment, and anything that would be damaged by modified sine wave power. Quieter and cleaner than a generator.',
+  },
+  {
+    slug: 'bluetti-ac200max',
+    name: 'Bluetti AC200MAX Power Station',
+    category: 'Power',
+    image: '/products/bluetti-ac200max.jpg',
+    url: 'https://www.bluettipower.com/products/bluetti-ac200max',
+    scenarios: ['general', 'drone', 'flooding'],
+    description: '2,048Wh expandable power station with 2,200W AC output, 900W solar input, and dual wireless charging pads. Expandable to 8,192Wh. 16 output ports.',
+    why: 'The widest input range of any power station — charges from solar, wall, car, or generator simultaneously. 16 ports means the whole family charges at once. Expandable to 8kWh for extended outages.',
+  },
+
+  // ─── Packs & Bags ─────────────────────────────────────────────────────────
   {
     slug: 'daypack',
     name: 'Mystery Ranch 2-Day Assault Pack',
@@ -96,7 +201,28 @@ export const CATALOG: CatalogItem[] = [
     description: '27L assault pack with MOLLE webbing, YKK zippers, and Mystery Ranch\'s 3-ZIP opening for full access to the main compartment. Made in the USA. Fits 2 days of supplies.',
     why: 'Built to military spec and used by special operations worldwide. The 3-ZIP opening means no digging — everything is accessible in seconds. This pack will outlast you.',
   },
-  // Knives & Tools
+  {
+    slug: '5-11-rush-72',
+    name: '5.11 Tactical Rush 72 Pack',
+    category: 'Packs & Bags',
+    image: '/products/5-11-rush-72.jpg',
+    url: 'https://www.511tactical.com/rush-72-backpack-20.html',
+    scenarios: ['drone', 'flooding', 'general'],
+    description: '55L 72-hour assault pack with 14 compartments, MOLLE webbing, hydration bladder compartment, and a built-in sleeping bag compartment at the base. Fleece-lined sunglass pocket.',
+    why: 'Designed specifically as a 72-hour bug-out bag. The compartment structure maps directly to kit categories: medical, food, water, comms, fire. Everything has a place before you start packing.',
+  },
+  {
+    slug: 'maxpedition-falcon',
+    name: 'Maxpedition Falcon-II Backpack',
+    category: 'Packs & Bags',
+    image: '/products/maxpedition-falcon.jpg',
+    url: 'https://www.maxpedition.com/collections/backpacks/products/falcon-ii-backpack',
+    scenarios: ['general', 'drone'],
+    description: '23L tactical backpack in 1000D Cordura nylon with welded construction and double-stitched seams. MOLLE compatible, hydration compatible, low-profile design.',
+    why: 'Maxpedition is the benchmark for stitching quality in the industry. The welded construction means no seam failure under load. Low profile doesn\'t signal "tactical" in a crowd.',
+  },
+
+  // ─── Knives & Tools ───────────────────────────────────────────────────────
   {
     slug: 'esee-knife',
     name: 'ESEE Fixed Blade Knife',
@@ -117,7 +243,28 @@ export const CATALOG: CatalogItem[] = [
     description: 'Premium titanium-handled multi-tool with 19 tools including a replaceable cutting hook, saw, file, and S30V steel main blade. 25-year Leatherman guarantee.',
     why: 'S30V steel holds an edge longer than any other multi-tool blade on the market. Titanium handles keep weight down without sacrificing strength. This is the last multi-tool you will buy.',
   },
-  // Fire
+  {
+    slug: 'mora-garberg',
+    name: 'Mora Garberg Full Tang Knife',
+    category: 'Knives & Tools',
+    image: '/products/mora-garberg.jpg',
+    url: 'https://www.morakniv.se/en/product/mora-garberg-black/',
+    scenarios: ['general', 'flooding', 'drone'],
+    description: 'Full-tang Sandvik 12C27 stainless steel blade with a multi-mount polymer sheath. Designed for Scandinavian conditions. Officially recommended by the Swedish military.',
+    why: 'The best value full-tang fixed blade available. Sandvik 12C27 is stainless — unlike 1095, it won\'t rust in wet conditions. The multi-mount sheath clips to MOLLE, belt, or chest rig.',
+  },
+  {
+    slug: 'gerber-strongarm',
+    name: 'Gerber Strongarm Fixed Blade',
+    category: 'Knives & Tools',
+    image: '/products/gerber-strongarm.jpg',
+    url: 'https://www.gerbergear.com/en-us/shop/knives/all-knives/strongarm-fixed-blade-knife/31-003614.html',
+    scenarios: ['drone', 'general'],
+    description: '420HC steel drop-point blade with a diamond-texture rubber handle and a multi-position sheath. Used by US military and law enforcement. Pry-bar pommel.',
+    why: 'The pry-bar pommel makes this a genuine multi-purpose tool — open crates, break glass, hammer stakes. 420HC steel sacrifices some edge retention for toughness, which matters more in a field knife.',
+  },
+
+  // ─── Fire ─────────────────────────────────────────────────────────────────
   {
     slug: 'fire-starter',
     name: 'Überleben Zünden Pro Fire Starter',
@@ -128,7 +275,28 @@ export const CATALOG: CatalogItem[] = [
     description: 'High-carbon ferrocerium rod producing sparks at 3,000°C. Works when wet, in wind, and at altitude. Includes striker and built-in tinder compartment.',
     why: 'Lighters run out of fuel. Matches get wet. Ferrocerium rods work in any condition and last for thousands of strikes. Fire means warmth, water purification, and morale.',
   },
-  // Cordage
+  {
+    slug: 'light-my-fire-firesteel',
+    name: 'Light My Fire Swedish FireSteel Army',
+    category: 'Fire',
+    image: '/products/light-my-fire-firesteel.jpg',
+    url: 'https://www.lightmyfire.com/products/firesteel/swedish-firesteel-army/',
+    scenarios: ['all'],
+    description: 'The original ferrocerium fire starter used by the Swedish Department of Defence. 12,000-strike rated rod in Scout size. Produces a 3,000°C spark shower that works in any weather.',
+    why: 'Light My Fire invented the modern ferro rod concept. The Army model is larger and more durable than the Scout. If you only carry one fire-starting tool, this is it.',
+  },
+  {
+    slug: 'uco-stormproof-matches',
+    name: 'UCO Stormproof Match Kit',
+    category: 'Fire',
+    image: '/products/uco-stormproof-matches.jpg',
+    url: 'https://ucogear.com/products/stormproof-match-kit',
+    scenarios: ['all'],
+    description: 'Waterproof matches that relight after being submerged and burn for 15 seconds in wind and rain. Includes 25 matches, 3 strikers, and a waterproof case.',
+    why: 'A ferro rod requires dry tinder and technique. Stormproof matches work even when hands are cold and shaking. These are your backup to the backup — always pack both.',
+  },
+
+  // ─── Cordage ──────────────────────────────────────────────────────────────
   {
     slug: 'rope',
     name: 'Titan Survivor Cord',
@@ -139,10 +307,31 @@ export const CATALOG: CatalogItem[] = [
     description: '103lb paracord with an inner core containing fishing line, fire tinder, and a copper wire strand. 100-foot spool. MIL-C-5040H Type III rated.',
     why: 'Four tools in one cord. Rig a shelter, set a snare, start a fire, or catch a fish — all from the same spool. The copper wire can be used for repairs or improvised traps.',
   },
-  // Fuel & Storage
+  {
+    slug: 'atwood-paracord',
+    name: 'Atwood Rope MIL-SPEC 550 Paracord',
+    category: 'Cordage',
+    image: '/products/atwood-paracord.jpg',
+    url: 'https://www.atwoodrope.com/product/mil-spec-550-paracord/',
+    scenarios: ['all'],
+    description: 'True MIL-C-5040H Type III paracord made in the USA. 550lb minimum tensile strength, 7-strand nylon core. Available in 100ft, 300ft, and 1,000ft spools.',
+    why: 'Not all "550 paracord" is actually rated to 550lb — most cheap versions are not. Atwood is one of the few manufacturers making genuine MIL-SPEC cord. The 7-strand core can be extracted for sewing, fishing line, or trip wire.',
+  },
+  {
+    slug: 'type-iv-paracord',
+    name: 'Type IV 750 Paracord',
+    category: 'Cordage',
+    image: '/products/type-iv-paracord.jpg',
+    url: 'https://www.paracordplanet.com/750-paracord/',
+    scenarios: ['flooding', 'drone', 'general'],
+    description: '750lb rated Type IV paracord — 36% stronger than standard 550. 11-strand core, 5/32" diameter. Suitable for climbing assists, hauling, and structural lashing.',
+    why: 'When the load is heavy — hauling supplies, securing a vehicle, rigging a weight-bearing shelter — standard 550 cord is not rated for the task. Type IV is. Same diameter, significantly more strength.',
+  },
+
+  // ─── Fuel & Storage ───────────────────────────────────────────────────────
   {
     slug: 'jerry-can',
-    name: 'Wavian Steel Jerry Can',
+    name: 'Wavian NATO Steel Jerry Can',
     category: 'Fuel & Storage',
     image: '/products/jerry-can.jpg',
     url: 'https://www.amazon.com/Wavian-Jerry-Steel-Holder-Bundle/dp/B0F7M2CV1R',
@@ -150,7 +339,28 @@ export const CATALOG: CatalogItem[] = [
     description: 'NATO-spec 20L steel fuel can with locking closure and built-in spout. Approved for petrol, diesel, and water storage. Made in Europe to original WWII spec.',
     why: 'Plastic cans degrade with fuel over time and crack under UV. Steel NATO cans are airtight, stackable, and last decades. The original design that every other jerry can copies.',
   },
-  // Trapping & Food
+  {
+    slug: 'scepter-water-container',
+    name: 'Scepter Military Water Container',
+    category: 'Fuel & Storage',
+    image: '/products/scepter-water-container.jpg',
+    url: 'https://www.scepter.com/en-ca/military/military-water-containers',
+    scenarios: ['all'],
+    description: '20L military-spec polyethylene water container used by NATO armed forces. Collapsible when empty, UV-resistant, and BPA-free. Stackable design with standard NATO thread.',
+    why: 'Dedicated water containers keep water safe longer than repurposed vessels. The military spec means no plastic leaching, no taste transfer, and no degradation under UV. Lighter than steel when empty.',
+  },
+  {
+    slug: 'msr-dromedary',
+    name: 'MSR Dromedary Water Bag',
+    category: 'Fuel & Storage',
+    image: '/products/msr-dromedary.jpg',
+    url: 'https://www.msrgear.com/water/water-storage/dromedary-bags/dromedary-bag/09020.html',
+    scenarios: ['flooding', 'general', 'drone'],
+    description: 'High-tenacity nylon water bag in 2L–10L sizes. Rolls flat when empty, stands upright when full. Compatible with MSR gravity filters. BPA-free, taste-neutral.',
+    why: 'Rigid containers take up space whether full or empty. This rolls into nothing in your pack and expands to 10L when you need it. Attaches directly to MSR filters for gravity purification at camp.',
+  },
+
+  // ─── Trapping & Food ──────────────────────────────────────────────────────
   {
     slug: 'snares',
     name: 'Vigilant Trails Pocket Snares',
@@ -160,6 +370,26 @@ export const CATALOG: CatalogItem[] = [
     scenarios: ['general', 'drone'],
     description: 'Pack of 12 stainless steel wire snares designed for small game. Preset loops, durable construction, fits in a pocket. Includes instruction card.',
     why: 'Passive food gathering requires no ammunition, no noise, and no active time. Set them at dusk, check at dawn. In a prolonged situation, protein from the land changes the calculus entirely.',
+  },
+  {
+    slug: 'best-glide-fishing',
+    name: 'Best Glide Survival Fishing Kit',
+    category: 'Trapping & Food',
+    image: '/products/best-glide-fishing.jpg',
+    url: 'https://www.bestglide.com/products/ultimate-survival-fishing-kit',
+    scenarios: ['flooding', 'general', 'drone'],
+    description: 'Complete compact fishing kit in a waterproof tin: hooks, line, sinkers, swivels, lures, and instructions. Designed for survival fishing with minimal equipment.',
+    why: 'Near any water source, fish are available protein that requires no hunting skill. This kit fits in a shirt pocket and covers the full range of fishing techniques from bank fishing to improvised trapping.',
+  },
+  {
+    slug: 'datrex-food-bar',
+    name: 'Datrex 3600 Emergency Food Bars',
+    category: 'Trapping & Food',
+    image: '/products/datrex-food-bar.jpg',
+    url: 'https://www.datrex.com/product/3600-calorie-emergency-food-bar/',
+    scenarios: ['all'],
+    description: '3,600-calorie emergency ration bar in individually wrapped 200-calorie portions. 5-year shelf life, US Coast Guard approved. No preparation required, non-thirst provoking.',
+    why: 'Three days of calories in one sealed package. Coast Guard approval means it\'s been tested for real emergency conditions. Non-thirst provoking formula matters when water is already scarce.',
   },
 ]
 
