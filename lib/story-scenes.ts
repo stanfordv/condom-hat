@@ -56,6 +56,20 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       imagePrompt: 'athletic blonde man in his 30s loading a large tactical backpack in a suburban garage, car hood open uselessly in the background, three bicycles lined up ready, early morning grey light through the garage door, determined focused expression, photorealistic cinematic',
     },
     {
+      duration: 'Night 1',
+      headline: 'One last hot meal.',
+      narrative: [
+        'Before they sleep, Ethan lights the fire starter and heats food for the kids on the camp stove.',
+        'His wife watches the glow on the horizon. He watches her.',
+        'Tomorrow they move. Tonight they eat properly.',
+      ],
+      gearSlug: 'fire-starter',
+      gearLabel: 'Überleben Zünden Fire Starter',
+      gearImage: 'fire-starter.jpg',
+      mood: 'tense',
+      imagePrompt: 'athletic blonde man in his 30s crouched over a small camp stove in a dark suburban backyard, soft warm firelight on his face and three young children eating behind him, wife looking at distant orange glow on the horizon, quiet and purposeful, photorealistic cinematic',
+    },
+    {
       duration: 'Day 2',
       headline: 'On foot, together.',
       narrative: [
@@ -70,6 +84,20 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       imagePrompt: 'athletic blonde man with a loaded backpack leading his wife and three children along a quiet empty suburban road at dawn, two kids on bikes, he carries a young child, all wearing practical clothing, calm and purposeful, soft dawn light through suburban trees, photorealistic cinematic',
     },
     {
+      duration: 'Day 3',
+      headline: 'Other people have the same idea.',
+      narrative: [
+        'Three families have stopped at a park just off the route. They see Ethan\'s pack and assume he knows something.',
+        'He shares the route. Not the destination — just the route. Some information costs nothing.',
+        'One of their kids has a deep cut. He patches it from his first aid kit and moves his family on.',
+      ],
+      gearSlug: 'first-aid-kit',
+      gearLabel: 'Scherber First Aid Kit',
+      gearImage: 'first-aid-kit.jpg',
+      mood: 'critical',
+      imagePrompt: 'athletic blonde man kneeling beside a child in a suburban park, applying a bandage from an open first aid kit, several displaced families gathered around watching with relief, overcast daylight, calm and capable expression, photorealistic cinematic',
+    },
+    {
       duration: 'Days 3–7',
       headline: 'Hold the perimeter.',
       narrative: [
@@ -82,6 +110,20 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       gearImage: 'esee-knife.jpg',
       mood: 'critical',
       imagePrompt: 'athletic blonde man crouching alert at the corner of a rural house at night, fixed blade knife on his belt, paracord strung across a wooden gate behind him, family silhouettes warm and lit through a window, vigilant protective expression, dramatic low moonlight, photorealistic cinematic',
+    },
+    {
+      duration: 'Days 5–6',
+      headline: 'Others find them.',
+      narrative: [
+        'Two more families arrived overnight, sent by word of mouth. The well is shared. The wood stove runs all day.',
+        'Ethan rigs a stronger perimeter and gets one message out on the Garmin: their coordinates, a headcount, their status.',
+        'His brother-in-law says the place is getting crowded. Ethan says that\'s exactly how it\'s supposed to work.',
+      ],
+      gearSlug: 'garmin-inreach-mini',
+      gearLabel: 'Garmin inReach Mini 2',
+      gearImage: 'garmin-inreach-mini.jpg',
+      mood: 'critical',
+      imagePrompt: 'athletic blonde man looking at a small satellite communicator in his palm outside a rural property at dusk, two other families visible behind him settling in around a fire, wood smoke rising from a chimney, determined and calm expression, photorealistic cinematic',
     },
     {
       duration: 'Week 2',
@@ -141,6 +183,20 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       imagePrompt: 'rugged handsome man sealing basement door with tape and plastic sheeting, family visible behind him — woman and young child, emergency battery lantern, dramatic shadows, tense determined expression, photorealistic cinematic',
     },
     {
+      duration: 'Days 2–3',
+      headline: 'Time moves differently underground.',
+      narrative: [
+        'His daughter asks how much longer. He says three more sleeps. She asks what day it will be. He says Tuesday.',
+        'Water rationed in measured cups from the WaterBrick. The DATREX bars are dry but they eat every one.',
+        'He reads to her from his phone while the battery holds. He reads slowly. He makes the book last.',
+      ],
+      gearSlug: 'waterbrick',
+      gearLabel: 'WaterBrick Stackable Container',
+      gearImage: 'waterbrick.jpg',
+      mood: 'critical',
+      imagePrompt: 'rugged man in late 30s sitting on a cot in a dim underground shelter, reading to his young daughter by emergency lantern light, wife sleeping on a cot behind them, WaterBrick containers stacked against the wall, intimate quiet scene, photorealistic cinematic',
+    },
+    {
       duration: 'Days 3–14',
       headline: 'The count drops.',
       narrative: [
@@ -152,6 +208,20 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       gearLabel: 'GQ GMC-800 Geiger Counter',
       mood: 'critical',
       imagePrompt: 'rugged man examining handheld Geiger counter in dim underground shelter, family sleeping on cots in background, single emergency lantern, focused calm expression, dramatic chiaroscuro lighting, photorealistic cinematic',
+    },
+    {
+      duration: 'Day 10',
+      headline: 'A voice on the radio.',
+      narrative: [
+        'The Midland crackles. An emergency management broadcast — the first coherent one in eight days.',
+        'Decontamination zones are being established. His area has a checkpoint six miles north.',
+        'He writes it all down. His wife reads it twice. Nobody says anything for a full minute.',
+      ],
+      gearSlug: 'midland-radio',
+      gearLabel: 'Midland ER310 Weather Alert Radio',
+      gearImage: 'midland-radio.jpg',
+      mood: 'hopeful',
+      imagePrompt: 'rugged man in a dim underground shelter, hand-cranked emergency radio held close to his ear, wife sitting up alert and listening, emergency lantern casting warm light, cautious expression slowly softening into relief, photorealistic cinematic',
     },
     {
       duration: 'Recovery',
@@ -197,6 +267,20 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       imagePrompt: 'calm weathered man in his 50s, salt-and-pepper hair, sitting at kitchen table at 2am listening to a weather alert radio, rain hammering the window behind him, single lamp light, focused composed expression, photorealistic cinematic',
     },
     {
+      duration: 'Hours 4–12',
+      headline: 'Move everything up.',
+      narrative: [
+        'David starts at 4am. Documents in waterproof bags. Supplies carried from the basement to the second floor, one armload at a time.',
+        'He fills every WaterBrick he owns. Six of them, stacked against the upstairs wall.',
+        'When water starts coming under the front door at 9am, he is already upstairs making coffee.',
+      ],
+      gearSlug: 'waterbrick',
+      gearLabel: 'WaterBrick Stackable Container',
+      gearImage: 'waterbrick.jpg',
+      mood: 'tense',
+      imagePrompt: 'weathered man in his 50s carrying heavy supply boxes up a dark staircase, rain hammering the windows, emergency lantern on the landing above, methodical and calm, photorealistic cinematic',
+    },
+    {
       duration: 'Hours 12–24',
       headline: 'His neighbours weren\'t ready.',
       narrative: [
@@ -225,6 +309,20 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       imagePrompt: 'stocky weathered man in his 50s waist-deep in brown floodwater, one hand gripping a safety rope tied to a lamp post, guiding an elderly woman across, overcast dramatic daylight, determined heroic expression, photorealistic cinematic',
     },
     {
+      duration: 'Night 2',
+      headline: 'Someone needs help.',
+      narrative: [
+        'One of the men from the end of the street slipped crossing — a gash above the knee, deep enough to need attention.',
+        'David opens his kit and works by headlamp. Proper pressure. Proper dressing. It holds.',
+        'The man asks where he learned that. David says he read the instructions before he needed to.',
+      ],
+      gearSlug: 'first-aid-kit',
+      gearLabel: 'Scherber First Aid Kit',
+      gearImage: 'first-aid-kit.jpg',
+      mood: 'critical',
+      imagePrompt: 'weathered man in his 50s crouching by headlamp light, applying a bandage to an injured man\'s leg, other flood survivors watching from the background of a makeshift shelter, rain audible outside, calm and practiced expression, photorealistic cinematic',
+    },
+    {
       duration: 'Day 3',
       headline: 'Water for everyone.',
       narrative: [
@@ -251,6 +349,20 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       gearImage: 'ecoflow.jpg',
       mood: 'hopeful',
       imagePrompt: 'weathered man in his 50s at a makeshift command station, EcoFlow power station charging multiple phones, neighbours clustered around, one talking on a phone with relief on her face, dramatic window light, photorealistic cinematic',
+    },
+    {
+      duration: 'Days 5–6',
+      headline: 'Waiting is its own skill.',
+      narrative: [
+        'Rescue isn\'t coming for another two days. People are restless. A disagreement breaks out about the food.',
+        'David lays the DATREX bars on the table. One per person, per meal. Even. No argument.',
+        'He doesn\'t run this group. He just makes the right thing obvious.',
+      ],
+      gearSlug: 'datrex-food-bar',
+      gearLabel: 'DATREX Emergency Food Bars',
+      gearImage: 'datrex-food-bar.jpg',
+      mood: 'tense',
+      imagePrompt: 'weathered man in his 50s calmly distributing emergency food bars at a long community hall table, group of ten survivors including elderly and children, overcast grey light through high windows, quiet authority in his manner, photorealistic cinematic',
     },
     {
       duration: 'Week 2',
@@ -284,6 +396,20 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       imagePrompt: 'confident composed woman in her early 30s, dark hair, practical clothing, standing in an empty pharmacy aisle studying nearly bare shelves, other customers visible panic-buying in background, calm determined expression, photorealistic cinematic, shallow depth of field',
     },
     {
+      duration: 'Week 1–2',
+      headline: 'The call she knew was coming.',
+      narrative: [
+        'Her friend calls in a panic. Fever, confusion, the hospital line rings out.',
+        'Sara walks her through it. Check temperature. Don\'t go out. Use what\'s in the house.',
+        'She orders supplies for three more households that night. She has already thought about who comes next.',
+      ],
+      gearSlug: 'first-aid-kit',
+      gearLabel: 'Scherber First Aid Kit',
+      gearImage: 'first-aid-kit.jpg',
+      mood: 'tense',
+      imagePrompt: 'composed young woman in her early 30s with dark hair at a kitchen table late at night, phone pressed to her ear, open laptop showing an online order in progress, rain outside, calm and focused under pressure, photorealistic cinematic',
+    },
+    {
       duration: 'Week 2–4',
       headline: 'Schools close.',
       narrative: [
@@ -295,6 +421,20 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       gearLabel: '3M 6502QL Respirator + P100 Filters',
       mood: 'tense',
       imagePrompt: 'composed young woman in her early 30s wearing a professional respirator mask and practical jacket, walking through a quiet residential street, children visible through a house window behind her, grey overcast daylight, calm and purposeful expression, photorealistic cinematic',
+    },
+    {
+      duration: 'Month 1',
+      headline: 'She built a system.',
+      narrative: [
+        'Everything runs on a rotation now. Water filtered daily. Masks before any door. Supplies logged in a notebook.',
+        'She has food for six weeks. She knows because she counted.',
+        'It doesn\'t feel like fear. It feels like running a household properly.',
+      ],
+      gearSlug: 'sawyer-squeeze',
+      gearLabel: 'Sawyer Squeeze Water Filter',
+      gearImage: 'sawyer-squeeze.jpg',
+      mood: 'normal',
+      imagePrompt: 'organised young woman in her early 30s with dark hair at a kitchen counter, neat rows of supplies visible in a pantry behind her, writing in a notebook with quiet confidence, warm domestic morning light, photorealistic cinematic',
     },
     {
       duration: 'Month 1–3',
@@ -309,6 +449,19 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       gearImage: 'first-aid-kit.jpg',
       mood: 'critical',
       imagePrompt: 'capable young woman in her 30s at an organised kitchen table, open first aid kit in front of her, on the phone guiding someone, elderly parents and young children visible comfortable in the background, warm interior lamp light, calm in control expression, photorealistic cinematic',
+    },
+    {
+      duration: 'Month 2',
+      headline: 'Her sister\'s family gets sick.',
+      narrative: [
+        'All four of them. Not serious — but enough to be scared.',
+        'Sara leaves a box on their doorstep every morning. Food, medication, written instructions, a note.',
+        'She doesn\'t go in. That\'s the hardest part.',
+      ],
+      gearSlug: '3m-6502ql-respirator',
+      gearLabel: '3M 6502QL Respirator',
+      mood: 'critical',
+      imagePrompt: 'young woman in her early 30s with dark hair wearing a respirator mask, gently setting a supply box on a doorstep in a quiet street, warm lights visible inside the house, her expression tender but resolute, grey overcast daylight, photorealistic cinematic',
     },
     {
       duration: 'Month 3+',
@@ -354,6 +507,19 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       mood: 'tense',
     },
     {
+      duration: 'Days 2–3',
+      headline: 'Cooking in the dark.',
+      narrative: [
+        'The camp stove goes on the kitchen counter. Pasta. Canned tomatoes. Enough for everyone.',
+        'Your kids don\'t know this is unusual. That is the point.',
+        'You make coffee in the morning and pretend it is a camping trip.',
+      ],
+      gearSlug: 'fire-starter',
+      gearLabel: 'Überleben Zünden Fire Starter',
+      gearImage: 'fire-starter.jpg',
+      mood: 'normal',
+    },
+    {
       duration: 'Day 5',
       headline: 'Repair crews are two days out.',
       narrative: [
@@ -364,6 +530,19 @@ export const storyScenes: Record<Scenario, StoryScene[]> = {
       gearSlug: 'midland-er310',
       gearLabel: 'Midland ER310 Emergency Radio',
       gearImage: 'midland-radio.jpg',
+      mood: 'tense',
+    },
+    {
+      duration: 'Days 6–7',
+      headline: 'The tap runs brown.',
+      narrative: [
+        'Mains pressure has been off for two days. You run the Sawyer Squeeze on the rain barrel and say nothing about it.',
+        'Your neighbour knocks and asks if you have any spare water. You hand her a LifeStraw.',
+        'She\'s the third person to knock this week.',
+      ],
+      gearSlug: 'sawyer-squeeze',
+      gearLabel: 'Sawyer Squeeze Water Filter',
+      gearImage: 'sawyer-squeeze.jpg',
       mood: 'tense',
     },
     {
