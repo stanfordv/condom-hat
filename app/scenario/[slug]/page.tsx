@@ -9,7 +9,7 @@ export function generateStaticParams() {
   return scenarioSlugs.map((slug) => ({ slug }))
 }
 
-const AI_SCENARIOS: Scenario[] = ['nuclear', 'flooding']
+const AI_SCENARIOS: Scenario[] = ['nuclear', 'flooding', 'virus']
 
 export default async function ScenarioPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
