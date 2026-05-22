@@ -1,7 +1,7 @@
 import { type NextRequest } from 'next/server'
 import { z } from 'zod'
 import { createClient } from '@/app/utils/supabase/server'
-import { stripe } from '@/lib/stripe'
+import { getStripe } from '@/lib/stripe'
 import type { Product } from '@/lib/types'
 
 const TIERS_BY_BUDGET: Record<string, string[]> = {
@@ -11,7 +11,7 @@ const TIERS_BY_BUDGET: Record<string, string[]> = {
 }
 
 const KitInputSchema = z.object({
-  scenario: z.enum(['virus', 'nuclear', 'drone', 'general']),
+  scenario: z.enum(['virus', 'nuclear', 'drone', 'general', 'flooding']),
   householdSize: z.union([z.literal(1), z.literal(2), z.literal(4), z.literal(6)]),
   existingLevel: z.enum(['none', 'some', 'good']),
   budgetTier: z.enum(['starter', 'mid', 'full']),
@@ -69,7 +69,7 @@ export async function POST(request: NextRequest) {
     return Response.json({ products: typedProducts, kitConfigId: kitConfig?.id ?? null })
   }
 
-  const session = await stripe.checkout.sessions.create({
+  const session = await getStripe().checkout.sessions.create({
     mode: 'payment',
     line_items: lineItems,
     success_url: `${process.env.NEXT_PUBLIC_SITE_URL}/order/success?session_id={CHECKOUT_SESSION_ID}`,
