@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { CATALOG, CATEGORIES } from '@/lib/product-catalog'
 
 export const metadata = {
@@ -40,11 +41,9 @@ export default function ProductsPage() {
                 </h2>
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   {items.map((item) => (
-                    <a
+                    <Link
                       key={item.slug}
-                      href={item.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href={`/products/${item.slug}`}
                       className="group rounded-2xl border border-gray-200 bg-white overflow-hidden hover:border-gray-900 hover:shadow-md transition-all"
                     >
                       <div className="relative h-48 bg-gray-50">
@@ -77,10 +76,10 @@ export default function ProductsPage() {
                           ))}
                         </div>
                         <p className="mt-3 text-xs font-medium text-gray-400 group-hover:text-gray-900 transition-colors">
-                          View product →
+                          Learn more →
                         </p>
                       </div>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
