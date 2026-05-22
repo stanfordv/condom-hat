@@ -6,13 +6,13 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="min-h-full bg-white">
-      <section className="border-b border-gray-100 px-6 py-16">
+      <section className="px-6 py-20" style={{ backgroundColor: '#13100A' }}>
         <div className="mx-auto max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">About</p>
-          <h1 className="mt-3 text-4xl font-bold tracking-tight text-gray-900">
+          <p className="text-xs font-bold uppercase tracking-[0.3em]" style={{ color: 'rgba(240,196,0,0.5)' }}>★ About ★</p>
+          <h1 className="mt-3 text-4xl font-bold tracking-tight" style={{ color: '#F0C400' }}>
             What this is really about.
           </h1>
-          <p className="mt-4 text-lg leading-relaxed text-gray-600">
+          <p className="mt-4 text-lg leading-relaxed" style={{ color: 'rgba(245,240,232,0.65)' }}>
             CondomHat started as a story. It stays a story. The gear is how the story pays for itself.
           </p>
         </div>
@@ -83,12 +83,15 @@ export default function AboutPage() {
         </section>
 
         {/* Philosophy */}
-        <section className="rounded-2xl bg-gray-950 p-8">
-          <p className="text-xs font-bold uppercase tracking-widest text-white/40 mb-4">Philosophy</p>
-          <p className="text-white text-lg leading-relaxed font-medium">
-            "Anti-fear. Pro-knowledge."
+        <section className="rounded-2xl p-8" style={{ backgroundColor: '#13100A' }}>
+          <p className="text-xs font-bold uppercase tracking-[0.3em] mb-4" style={{ color: 'rgba(240,196,0,0.45)' }}>★ Philosophy ★</p>
+          <p className="text-3xl font-bold leading-tight" style={{ color: '#F0C400' }}>
+            Envy of the Apocalypse.
           </p>
-          <p className="text-white/60 mt-3 leading-relaxed">
+          <p className="mt-2 text-sm font-medium uppercase tracking-wider" style={{ color: 'rgba(245,240,232,0.35)' }}>
+            Anti-fear. Pro-knowledge.
+          </p>
+          <p className="mt-4 leading-relaxed" style={{ color: 'rgba(245,240,232,0.6)' }}>
             Preparedness is not paranoia. It is pattern recognition. The people who handled every
             crisis in history well were the ones who had already thought about it. CondomHat exists
             to make that thinking accessible, credible, and — occasionally — entertaining.

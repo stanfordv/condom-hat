@@ -24,9 +24,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   return (
     <div className="min-h-full bg-white">
       {/* Breadcrumb */}
-      <div className="border-b border-gray-100 px-6 py-4">
+      <div className="px-6 py-4" style={{ backgroundColor: '#13100A', borderBottom: '1px solid rgba(240,196,0,0.12)' }}>
         <div className="mx-auto max-w-5xl">
-          <Link href="/products" className="text-xs text-gray-500 hover:text-gray-900 transition-colors">
+          <Link href="/products" className="text-xs font-medium uppercase tracking-wider transition-colors" style={{ color: 'rgba(245,240,232,0.5)' }}>
             ← All products
           </Link>
         </div>
@@ -55,10 +55,10 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
           {/* Details */}
           <div className="flex flex-col">
-            <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">
+            <p className="text-xs font-bold uppercase tracking-[0.25em]" style={{ color: '#8C151A' }}>
               {item.category}
             </p>
-            <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900">
+            <h1 className="mt-2 text-3xl font-bold tracking-tight" style={{ color: '#13100A' }}>
               {item.name}
             </h1>
 
@@ -67,7 +67,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               {item.scenarios.map((s) => (
                 <span
                   key={s}
-                  className="inline-block rounded-full border border-gray-200 px-3 py-1 text-xs font-medium text-gray-600"
+                  className="inline-block rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider"
+                  style={{ backgroundColor: '#13100A', color: '#F0C400' }}
                 >
                   {SCENARIO_LABELS[s] ?? s}
                 </span>
@@ -80,25 +81,26 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             </p>
 
             {/* Why this */}
-            <div className="mt-6 rounded-xl bg-gray-50 p-5">
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">
+            <div className="mt-6 rounded-xl p-5" style={{ backgroundColor: '#F5F0E8', border: '1px solid rgba(19,16,10,0.08)' }}>
+              <p className="text-xs font-bold uppercase tracking-[0.25em] mb-2" style={{ color: '#8C151A' }}>
                 Why this one
               </p>
-              <p className="text-sm leading-relaxed text-gray-700">
+              <p className="text-sm leading-relaxed" style={{ color: 'rgba(19,16,10,0.7)' }}>
                 {item.why}
               </p>
             </div>
 
             {/* CTA */}
             <div className="mt-8 flex flex-col gap-3">
-              <button className="w-full rounded-xl bg-gray-900 px-6 py-4 text-sm font-semibold text-white hover:bg-gray-700 transition-colors">
+              <button className="w-full rounded-xl px-6 py-4 text-sm font-bold uppercase tracking-wider text-white transition-opacity hover:opacity-80" style={{ backgroundColor: '#8C151A' }}>
                 Add to kit
               </button>
               <a
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full rounded-xl border border-gray-200 px-6 py-4 text-center text-sm font-medium text-gray-600 hover:border-gray-400 hover:text-gray-900 transition-colors"
+                className="w-full rounded-xl px-6 py-4 text-center text-sm font-medium uppercase tracking-wider transition-colors"
+                style={{ border: '1px solid rgba(19,16,10,0.15)', color: 'rgba(19,16,10,0.55)' }}
               >
                 View manufacturer page ↗
               </a>

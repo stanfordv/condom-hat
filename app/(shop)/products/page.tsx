@@ -19,11 +19,11 @@ const SCENARIO_LABELS: Record<string, string> = {
 export default function ProductsPage() {
   return (
     <div className="min-h-full bg-white">
-      <section className="border-b border-gray-100 px-6 py-16">
+      <section className="px-6 py-20" style={{ backgroundColor: '#13100A' }}>
         <div className="mx-auto max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">Product catalog</p>
-          <h1 className="mt-3 text-4xl font-bold tracking-tight text-gray-900">Everything we carry</h1>
-          <p className="mt-4 text-lg leading-relaxed text-gray-600">
+          <p className="text-xs font-bold uppercase tracking-[0.3em]" style={{ color: 'rgba(240,196,0,0.5)' }}>★ Product catalog ★</p>
+          <h1 className="mt-3 text-4xl font-bold tracking-tight" style={{ color: '#F0C400' }}>Everything we carry</h1>
+          <p className="mt-4 text-lg leading-relaxed" style={{ color: 'rgba(245,240,232,0.65)' }}>
             One best-in-class option per category. No filler, no duplicates.
             Each item is chosen for reliability, repairability, and real-world use.
           </p>
