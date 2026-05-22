@@ -423,6 +423,47 @@ export const CATALOG: CatalogItem[] = [
     description: '3,600-calorie emergency ration bar in individually wrapped 200-calorie portions. 5-year shelf life, US Coast Guard approved. No preparation required, non-thirst provoking.',
     why: 'Three days of calories in one sealed package. Coast Guard approval means it\'s been tested for real emergency conditions. Non-thirst provoking formula matters when water is already scarce.',
   },
+  // ─── Protection ──────────────────────────────────────────────────────────
+  {
+    slug: 'lelo-hex',
+    name: 'LELO HEX Original Condoms',
+    category: 'Protection',
+    image: '/products/lelo-hex.jpg',
+    url: 'https://www.amazon.com/LELO-Original-Hexagonal-Structure-Lubricated/dp/B01N4AOB3B',
+    scenarios: ['all'],
+    description: 'Ultra-thin latex condom engineered with a hexagonal interior structure — 36 interlocking cells that distribute stress evenly so the condom is simultaneously thinner and stronger than standard latex. Built to last even in the most harsh conditions.',
+    why: 'The only condom that solved the thinness vs. strength trade-off with structural engineering rather than marketing. If you are preparing for a scenario where resupply is unlikely for months, these are the ones you want. Nobody will be making condoms like this for a very long time.',
+  },
+  {
+    slug: 'okamoto-003',
+    name: 'Okamoto 003 Platinum',
+    category: 'Protection',
+    image: '/products/okamoto-003.png',
+    url: 'https://worldcondoms.com/products/okamoto-003-platinum-condoms',
+    scenarios: ['all'],
+    description: 'Japanese-engineered latex condom at exactly 0.03mm thin from base to tip — among the thinnest consistently manufactured condoms on the market. Made from Okamoto\'s proprietary Sheerlon latex: softer, more flexible, and odour-free. Built to perform even in the most harsh conditions.',
+    why: 'Okamoto has been making precision latex products for over 80 years. The 003 Platinum is their benchmark: 0.03mm uniformly, electronically tested, made in Japan. When quality matters and options are scarce, this is the one.',
+  },
+  {
+    slug: 'skyn-original',
+    name: 'SKYN Original — Non-Latex',
+    category: 'Protection',
+    image: '/products/skyn-original.jpg',
+    url: 'https://www.amazon.com/SKYN-Original-Condoms-Non-Latex-Polyisoprene/dp/B00A3X2P1Q',
+    scenarios: ['all'],
+    description: 'Non-latex condom made from polyisoprene — a synthetic material that transmits body heat better than latex and contains no allergens. Feels closer to nothing than any latex alternative. Suitable for latex allergies and sensitivities. Designed to hold up in the most harsh conditions.',
+    why: 'Up to 6% of people have a latex sensitivity. In a long-duration scenario with limited medical access, an allergic reaction is a preventable problem. SKYN is the best non-latex option at any price point.',
+  },
+  {
+    slug: 'fc2-internal',
+    name: 'FC2 Internal Condom',
+    category: 'Protection',
+    image: '/products/fc2-condom.webp',
+    url: 'https://fc2condoms.com/get-fc2/',
+    scenarios: ['all'],
+    description: 'The only FDA-approved internal condom on the market. Made from nitrile — completely latex-free. Can be inserted up to two hours before use. Provides STI and pregnancy protection that is controlled by the wearer. Rated 95% effective with perfect use.',
+    why: 'The only protection option that does not depend on a partner. In any extended emergency scenario, autonomy matters. FC2 is the one product in this category that has no equivalent — nothing else is FDA-approved as an internal barrier.',
+  },
 ]
 
 export const CATEGORIES = [...new Set(CATALOG.map((item) => item.category))]

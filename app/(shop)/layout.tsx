@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ThreatBanner from '@/components/ThreatBanner'
+import MobileNav from '@/components/MobileNav'
 import { getActiveThreatLevel } from '@/lib/threat'
 import type { Scenario } from '@/lib/types'
 
@@ -18,7 +19,7 @@ export default async function ShopLayout({ children }: { children: React.ReactNo
   return (
     <div className="flex min-h-full flex-col">
       <ThreatBanner />
-      <header className="px-6 py-4" style={{ backgroundColor: '#13100A' }}>
+      <header className="relative px-6 py-4" style={{ backgroundColor: '#13100A' }}>
         <div className="mx-auto flex max-w-6xl items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <Image src="/condomhatdude.png" alt="CondomHat" width={36} height={36} className="rounded" />
@@ -41,15 +42,18 @@ export default async function ShopLayout({ children }: { children: React.ReactNo
               About
             </Link>
           </nav>
-          {level < 5 && (
-            <Link
-              href="#kit-builder"
-              className="rounded-lg px-4 py-2 text-sm font-bold uppercase tracking-wider text-white transition-opacity hover:opacity-80"
-              style={{ backgroundColor: '#8C151A' }}
-            >
-              Build your kit
-            </Link>
-          )}
+          <div className="flex items-center gap-3">
+            {level < 5 && (
+              <Link
+                href="#kit-builder"
+                className="hidden sm:block rounded-lg px-4 py-2 text-sm font-bold uppercase tracking-wider text-white transition-opacity hover:opacity-80"
+                style={{ backgroundColor: '#8C151A' }}
+              >
+                Build your kit
+              </Link>
+            )}
+            <MobileNav />
+          </div>
         </div>
       </header>
       <main className="flex-1">{children}</main>

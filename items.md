@@ -149,3 +149,27 @@ When adding a new item:
 2. Drop product image in `/public/products/{slug}.jpg`
 3. Add `gearSlug` reference in `/lib/story-scenes.ts` for relevant scene
 4. Add product record in Supabase with matching slug
+
+---
+
+## Protection
+
+### lelo-hex — LELO HEX Original Condoms
+- **Image**: `/public/products/lelo-hex.jpg`
+- **URL**: https://www.amazon.com/LELO-Original-Hexagonal-Structure-Lubricated/dp/B01N4AOB3B
+- **Scenarios**: all
+
+### okamoto-003 — Okamoto 003 Platinum
+- **Image**: `/public/products/okamoto-003.png`
+- **URL**: https://worldcondoms.com/products/okamoto-003-platinum-condoms
+- **Scenarios**: all
+
+### skyn-original — SKYN Original Non-Latex
+- **Image**: `/public/products/skyn-original.jpg`
+- **URL**: https://www.amazon.com/SKYN-Original-Condoms-Non-Latex-Polyisoprene/dp/B00A3X2P1Q
+- **Scenarios**: all
+
+### fc2-internal — FC2 Internal Condom
+- **Image**: `/public/products/fc2-condom.webp`
+- **URL**: https://fc2condoms.com/get-fc2/
+- **Scenarios**: all
