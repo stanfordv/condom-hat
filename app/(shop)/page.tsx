@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import KitBuilder from '@/components/KitBuilder'
 import { getActiveThreatLevel } from '@/lib/threat'
 import { scenarios } from '@/lib/scenarios'
@@ -20,10 +19,8 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="px-6 py-20 md:py-28" style={{ backgroundColor: '#13100A' }}>
-        <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-12">
-          {/* Text */}
-          <div className="flex-1 text-center md:text-left">
+      <section className="px-6 py-28" style={{ backgroundColor: '#13100A' }}>
+        <div className="mx-auto max-w-3xl text-center">
             <p className="text-xs font-bold uppercase tracking-[0.35em]" style={{ color: 'rgba(245,240,232,0.35)' }}>
               ★ Emergency Provisions ★
             </p>
@@ -35,7 +32,7 @@ export default async function HomePage() {
               No filler. No fear-mongering. Just calm, expert knowledge.
             </p>
             {!shopHidden && (
-              <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+              <div className="mt-8 flex flex-wrap justify-center gap-4">
                 <Link
                   href="#kit-builder"
                   className="rounded-xl px-6 py-3 font-bold uppercase tracking-wider text-white transition-opacity hover:opacity-80"
@@ -55,18 +52,6 @@ export default async function HomePage() {
             <p className="mt-10 text-sm italic tracking-wider" style={{ color: 'rgba(245,240,232,0.4)' }}>
               Envy of the Apocalypse.
             </p>
-          </div>
-          {/* Mascot */}
-          <div className="flex-shrink-0">
-            <Image
-              src="/dude.png"
-              alt="CondomHat mascot"
-              width={180}
-              height={380}
-              className="drop-shadow-2xl"
-              priority
-            />
-          </div>
         </div>
       </section>
 
