@@ -7,6 +7,7 @@ const SCENARIO_NAV: { slug: Scenario; label: string }[] = [
   { slug: 'virus', label: 'Epidemic' },
   { slug: 'nuclear', label: 'Nuclear' },
   { slug: 'drone', label: 'Infrastructure' },
+  { slug: 'flooding', label: 'Flooding' },
   { slug: 'general', label: 'General' },
 ]
 
