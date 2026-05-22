@@ -85,11 +85,11 @@ export default function AboutPage() {
         {/* Philosophy */}
         <section className="rounded-2xl p-8" style={{ backgroundColor: '#13100A' }}>
           <p className="text-xs font-bold uppercase tracking-[0.3em] mb-4" style={{ color: 'rgba(240,196,0,0.45)' }}>★ Philosophy ★</p>
-          <p className="text-3xl font-bold leading-tight" style={{ color: '#F0C400' }}>
-            Envy of the Apocalypse.
+          <p className="text-lg font-bold leading-tight" style={{ color: '#F0C400' }}>
+            "Anti-fear. Pro-knowledge."
           </p>
-          <p className="mt-2 text-sm font-medium uppercase tracking-wider" style={{ color: 'rgba(245,240,232,0.35)' }}>
-            Anti-fear. Pro-knowledge.
+          <p className="mt-2 text-xs italic tracking-wide" style={{ color: 'rgba(245,240,232,0.25)' }}>
+            Envy of the Apocalypse.
           </p>
           <p className="mt-4 leading-relaxed" style={{ color: 'rgba(245,240,232,0.6)' }}>
             Preparedness is not paranoia. It is pattern recognition. The people who handled every

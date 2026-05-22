@@ -22,15 +22,12 @@ export default async function HomePage() {
       <section className="px-6 py-28 text-center" style={{ backgroundColor: '#13100A' }}>
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-bold uppercase tracking-[0.35em]" style={{ color: 'rgba(245,240,232,0.35)' }}>
-            ★ CondomHat ★
+            ★ Premium Preparedness ★
           </p>
-          <h1 className="mt-4 font-bold leading-none tracking-tight" style={{ color: '#F0C400', fontSize: 'clamp(2.8rem, 7vw, 5.5rem)' }}>
-            Envy of the<br />Apocalypse.
+          <h1 className="mt-5 text-5xl font-bold leading-tight tracking-tight" style={{ color: '#F0C400' }}>
+            Understand the threat.<br />Buy what makes sense.
           </h1>
-          <p className="mt-6 text-xl font-medium" style={{ color: 'rgba(245,240,232,0.55)' }}>
-            Understand the threat. Buy what makes sense.
-          </p>
-          <p className="mt-3 text-base leading-relaxed" style={{ color: 'rgba(245,240,232,0.4)' }}>
+          <p className="mt-6 text-lg leading-relaxed" style={{ color: 'rgba(245,240,232,0.55)' }}>
             Every product we carry is the single best option in its category.
             No filler. No fear-mongering. Just calm, expert knowledge.
           </p>
@@ -52,6 +49,9 @@ export default async function HomePage() {
               </Link>
             </div>
           )}
+          <p className="mt-10 text-xs italic tracking-wide" style={{ color: 'rgba(245,240,232,0.2)' }}>
+            Envy of the Apocalypse.
+          </p>
         </div>
       </section>
 
