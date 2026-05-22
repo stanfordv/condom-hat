@@ -60,10 +60,10 @@ export default function StoryMode({ scenes, scenarioSlug, scenarioTitle }: Props
       {/* Top bar */}
       <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
         <Link
-          href={`/scenario/${scenarioSlug}`}
+          href={`/scenario/${scenarioSlug}/intel`}
           className="text-xs font-medium text-white/40 hover:text-white/80 transition-colors tracking-wide"
         >
-          ← Intel view
+          ← Intel
         </Link>
         <p className="text-xs font-semibold uppercase tracking-widest text-white/30">{scenarioTitle}</p>
         <div className="flex gap-2">
@@ -141,7 +141,7 @@ export default function StoryMode({ scenes, scenarioSlug, scenarioTitle }: Props
 
         {isLast ? (
           <Link
-            href={`/scenario/${scenarioSlug}#kit-builder`}
+            href={`/scenario/${scenarioSlug}/intel#kit-builder`}
             className={`rounded-xl px-6 py-3 text-sm font-semibold text-gray-950 transition-all duration-700 ${
               canContinue ? `${colors.active} opacity-100` : 'bg-white/20 opacity-0 pointer-events-none'
             }`}

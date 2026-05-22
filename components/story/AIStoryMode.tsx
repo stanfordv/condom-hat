@@ -99,10 +99,10 @@ export default function AIStoryMode({ scenes, scenario }: Props) {
       {/* Top nav */}
       <div className="relative z-10 flex items-center justify-between px-6 py-5">
         <Link
-          href={`/scenario/${scenario}`}
+          href={`/scenario/${scenario}/intel`}
           className="text-xs font-medium tracking-wide text-white/50 hover:text-white transition-colors"
         >
-          ← Intel view
+          ← Intel
         </Link>
         <div className="flex gap-2">
           {scenes.map((_, i) => (
@@ -143,7 +143,7 @@ export default function AIStoryMode({ scenes, scenario }: Props) {
 
         {isLast ? (
           <Link
-            href={`/scenario/${scenario}#kit-builder`}
+            href={`/scenario/${scenario}/intel#kit-builder`}
             className="inline-flex w-fit items-center rounded-xl bg-amber-400 px-6 py-3 text-sm font-semibold text-gray-950"
           >
             Build your kit →
