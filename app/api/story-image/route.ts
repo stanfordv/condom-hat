@@ -1,7 +1,6 @@
 import { type NextRequest } from 'next/server'
 
-const CHARACTER_PREFIX =
-  'Cinematic photorealistic photograph, rugged handsome man late 30s short dark beard calm determined expression practical dark clothing, premium quality 4K shallow depth of field, '
+const QUALITY_PREFIX = 'Cinematic photorealistic photograph, premium quality 4K, shallow depth of field, '
 
 function deterministicSeed(str: string): number {
   return Math.abs(str.split('').reduce((acc, c) => acc * 31 + c.charCodeAt(0), 7)) % 2147483647
@@ -21,7 +20,7 @@ export async function POST(request: NextRequest) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      prompt: CHARACTER_PREFIX + prompt,
+      prompt: QUALITY_PREFIX + prompt,
       image_size: 'landscape_16_9',
       num_inference_steps: 4,
       num_images: 1,
