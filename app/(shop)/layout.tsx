@@ -38,6 +38,12 @@ export default async function ShopLayout({ children }: { children: React.ReactNo
             >
               Products
             </Link>
+            <Link
+              href="/about"
+              className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              About
+            </Link>
           </nav>
           {level < 5 && (
             <Link

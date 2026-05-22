@@ -328,6 +328,38 @@ export const CATALOG: CatalogItem[] = [
     why: 'When the load is heavy — hauling supplies, securing a vehicle, rigging a weight-bearing shelter — standard 550 cord is not rated for the task. Type IV is. Same diameter, significantly more strength.',
   },
 
+  // ─── Water Storage ────────────────────────────────────────────────────────
+  {
+    slug: 'waterbrick',
+    name: 'WaterBrick Stackable Container (3.5 gal)',
+    category: 'Water Storage',
+    image: '/products/waterbrick.jpg',
+    url: 'https://www.waterbrick.org/collections/waterbrick-containers/products/waterbrick-standard',
+    scenarios: ['all'],
+    description: 'Interlocking 3.5-gallon BPA-free water containers that stack and interlock like bricks. Square profile eliminates wasted space. Stackable to ceiling height, each holds 13L.',
+    why: 'Round containers waste 20% of shelf space. WaterBricks pack solid, interlock for stability, and the square handle works even when fully loaded. The modular format means you scale exactly as much as you need.',
+  },
+  {
+    slug: 'waterprepared-tank',
+    name: 'WaterPrepared 160-Gallon Tank',
+    category: 'Water Storage',
+    image: '/products/waterprepared-tank.jpg',
+    url: 'https://waterprepared.com/products/160-gallon-emergency-water-storage-tank',
+    scenarios: ['general', 'flooding', 'drone', 'nuclear'],
+    description: 'FDA-approved food-grade polyethylene 160-gallon tank designed specifically for emergency water storage. Includes hand pump, water treatment, and a 5-year warranty. Fits through standard doorways.',
+    why: 'One tank holds 160 gallons — enough for a family of four for 80 days at survival intake. Fills from a standard garden hose. The hand pump means no electricity needed to access it.',
+  },
+  {
+    slug: 'platypus-platy',
+    name: 'Platypus Platy 4L Collapsible Bottle',
+    category: 'Water Storage',
+    image: '/products/platypus-platy.jpg',
+    url: 'https://platy.com/water-storage/platy-bottle/PLATYBTL.html',
+    scenarios: ['all'],
+    description: 'Ultralight collapsible water bottle that rolls flat when empty (weighs 27g). Holds 4 litres, BPA-free, taste-neutral, compatible with most filter systems. Used by ultralight backpackers worldwide.',
+    why: 'Zero volume when empty, 4L when full. Pairs directly with the Sawyer Squeeze — screw the filter onto the bottle and drink. For go-bags and bug-out kits, weight and packed size are everything.',
+  },
+
   // ─── Fuel & Storage ───────────────────────────────────────────────────────
   {
     slug: 'jerry-can',
